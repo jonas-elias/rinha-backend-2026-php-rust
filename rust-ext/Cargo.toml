@@ -1,0 +1,18 @@
+[package]
+name = "rinha-rs"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+name = "rinha_rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+ext-php-rs = "0.12"
+mimalloc = { version = "0.1", default-features = false }
+memchr = "2"
+libc = "0.2"
+
+[build-dependencies]
+ext-php-rs = "0.12"

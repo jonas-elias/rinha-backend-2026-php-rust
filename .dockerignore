@@ -1,0 +1,10 @@
+target
+.git
+.idea
+.vscode
+.DS_Store
+node_modules
+vendor
+data/index.bin
+data/index.bin.gz
+*.log

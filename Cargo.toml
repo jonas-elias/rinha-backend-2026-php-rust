@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = ["rust-ext", "rust-build"]
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
+debug = 0
+overflow-checks = false
+incremental = false
+
+[profile.release.package."*"]
+opt-level = 3
