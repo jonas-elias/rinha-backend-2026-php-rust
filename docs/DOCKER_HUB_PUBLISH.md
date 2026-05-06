@@ -1,10 +1,6 @@
 # Publicação no Docker Hub via GitHub Actions
 
-Sua empresa bloqueia login no Docker Hub. Solução: o **build e o push acontecem no
-runner do GitHub**, não na sua máquina. Você só precisa cadastrar 1 variável e
-1 secret no repo. Depois disso, todo `push` em `main` (ou `workflow_dispatch`
-manual) republica a imagem **e roda um smoke contra a imagem publicada** —
-essa é a sua garantia de que ela funciona.
+O **build e o push acontecem no runner do GitHub**, não na sua máquina. Você só precisa cadastrar 1 variável e 1 secret no repo. Depois disso, todo `push` em `main` (ou `workflow_dispatch` manual) republica a imagem **e roda um smoke contra a imagem publicada** — essa é a sua garantia de que ela funciona.
 
 ## 1. Gere um Personal Access Token no Docker Hub
 
@@ -12,7 +8,7 @@ Você só precisa fazer isso 1 vez, do **celular ou de uma rede pessoal** (não 
 empresa):
 
 1. Acesse https://hub.docker.com/settings/security (logue com a conta vinculada
-   ao gmail `jonasdasilvaelias@gmail.com`).
+   ao gmail `joxxxdasilvaexxxx@gmail.com`).
 2. Clique em **New Access Token**:
    - **Description**: `gh-actions rinha-2026-php-rust`
    - **Permissions**: `Read & Write` (precisa pra criar o repo público e dar push)
